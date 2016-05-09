@@ -1,0 +1,22 @@
+# Documentation: https://roots.io/trellis/docs/vault/
+vault_mysql_root_password: stagingpw
+
+# Documentation: https://roots.io/trellis/docs/security/
+vault_sudoer_passwords:
+  admin: $6$rounds=100000$JUkj1d3hCa6uFp6R$3rZ8jImyCpTP40e4I5APx7SbBvDCM8fB6GP/IGOrsk/GEUTUhl1i/Q2JNOpj9ashLpkgaCxqMqbFKdZdmAh26/
+
+# Variables to accompany `group_vars/staging/wordpress_sites.yml`
+# Note: the site name (`solidtimberbenchtops.com.au`) must match up with the site name in the above file.
+vault_wordpress_sites:
+  solidtimberbenchtops.com.au:
+    env:
+      db_password: tto_staging_pw
+      # Generate your keys here: https://roots.io/salts.html
+      auth_key: "lTQ&,8CUt%&0L<^&J..HbAl+LMA?Iue%.8iVOQ1n2EXR,Y-}H2aTW,=h]^EWU1gJ"
+      secure_auth_key: "{t$#t0|&`i!-yd6D7@vaE-ZzgPzz8WtM|{]stsU`rsShXZm$Um0P5`l$}6XMD+v5"
+      logged_in_key: "I_$iBF)Ly<dAZF7]A>B3SGNOq.l)d|wRZsx7}NzEn|ve5,G7eo@wYc+,,yP!E#E<"
+      nonce_key: "QZ=iu[SvBdp,%XGCffw[:eV]QVm|D7FD3?Q.QR*78n|9-Y8]TiH`|Vd.Bfa?*e#/"
+      auth_salt: "bt1lmF]Gd4`q(v{7uLRIspT>3XJ1*Z.$}2Pb=n;$Y:mK9^#-^IJzLjc3/zLX+eNZ"
+      secure_auth_salt: "z9.wYjm1Ok(><tE0%2vo80lk+%|3{e,gBTn-KxJe>UQiGnodB]W|u8N%mU0CJ2)5"
+      logged_in_salt: "E_iKJ%OXyS9B$Ib`P/_bcNQObO|C&j9xK0fQa1S1jzeo6+M!z8gM<eD&z^I3V2TM"
+      nonce_salt: "5_,Q0y9hYq#D&666W_GJjYe3i@zG-e}:4GOYU<$MmZW3t9j-%Z;@`<+nVVLN>G*y"
