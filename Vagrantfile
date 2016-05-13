@@ -3,7 +3,7 @@
 
 require 'yaml'
 
-ip = '10.0.4.2' # pick any local IP
+ip = '10.0.40.2' # pick any local IP
 cpus = 1
 memory = 1024 # in MB
 
