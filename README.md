@@ -1,4 +1,26 @@
-# Trellis
+#Chilli Development
+
+
+## Dependencies
+- Homebrew `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+`
+- Python `brew install python`
+- Ansible `brew install ansible`
+- pip setup tools `pip install --upgrade setuptools --user python`
+- [Vagrant](https://www.vagrantup.com/downloads.html)
+- [VirtualBox](https://www.virtualbox.org/wiki/Downloads)
+- [vagrant-bindfs](https://github.com/gael-ian/vagrant-bindfs#installation) >= 0.3.1 (Windows users may skip this)
+- [vagrant-hostmanager](https://github.com/smdahlen/vagrant-hostmanager#installation)
+
+
+## First time install
+
+* `mkdir chillidevelopment.com && cd chillidevelopment.com && mkdir`
+* `git clone git@github.com/ChilliCreative/trellis.git trellis`
+* `cd trellis && ansible-galaxy install -r requirements.yml`
+
+
+# Trellis Docs
 
 [![Build Status](https://travis-ci.org/roots/trellis.svg)](https://travis-ci.org/roots/trellis)
 
