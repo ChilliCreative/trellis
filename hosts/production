@@ -2,7 +2,9 @@
 # List each machine only once per [group], even if it will host multiple sites.
 
 [production]
-your_server_hostname
+live1.chillidevelopment.com
+solidtimberbenchtops.com.au
 
 [web]
-your_server_hostname
+live1.chillidevelopment.com
+solidtimberbenchtops.com.au
