@@ -1,0 +1,51 @@
+if ( $request_filename ~ /index.asp?pagename=contact+us ) {
+      rewrite ^ http://solidtimberbenchtops.com.au/contact permanent;
+   }
+   
+if ( $request_filename ~ /Index.asp?pagename=Who+We+Are&site=1&siteid=7039 ) {
+      rewrite ^ http://solidtimberbenchtops.com.au/about permanent;
+   }
+   
+if ( $request_filename ~ /index.asp?pagename=residential ) {
+      rewrite ^ http://solidtimberbenchtops.com.au/services permanent;
+   }
+   
+if ( $request_filename ~ /Index.asp?pagename=Contact ) {
+      rewrite ^ http://solidtimberbenchtops.com.au/contact permanent;
+   }
+   
+if ( $request_filename ~ /index.asp?pagename=delivery ) {
+      rewrite ^ http://solidtimberbenchtops.com.au/services permanent;
+   }
+   
+if ( $request_filename ~ /Index.asp?pagename=What+We+Provide&site=1&siteid=7039 ) {
+      rewrite ^ http://solidtimberbenchtops.com.au/services permanent;
+   }
+   
+if ( $request_filename ~ /Index.asp?pagename=What+We+Provide ) {
+      rewrite ^ http://solidtimberbenchtops.com.au/services permanent;
+   }
+   
+if ( $request_filename ~ /Index.asp?pagename=What ) {
+      rewrite ^ http://solidtimberbenchtops.com.au/services permanent;
+   }
+   
+if ( $request_filename ~ /index.asp?pagename=commercial ) {
+      rewrite ^ http://solidtimberbenchtops.com.au/services permanent;
+   }
+   
+if ( $request_filename ~ /index.asp?pagename=privacy ) {
+      rewrite ^ http://solidtimberbenchtops.com.au permanent;
+   }
+   
+if ( $request_filename ~ /Index.asp?pagename=What+We+Provide ) {
+      rewrite ^ http://solidtimberbenchtops.com.au/services permanent;
+   }
+
+if ( $request_filename ~ /index.asp?pagename=privacy+policy ) {
+      rewrite ^ http://solidtimberbenchtops.com.au permanent;
+   }
+   
+if ( $request_filename ~ /index.asp?pagename=environment ) {
+      rewrite ^ http://solidtimberbenchtops.com.au/services permanent;
+   }
